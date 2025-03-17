@@ -10,6 +10,7 @@
             margin: 0;
             padding: 0;
             text-align: center;
+            background-color: #f4f4f4;
         }
         header {
             background: #007BFF;
@@ -20,6 +21,9 @@
             max-width: 800px;
             margin: 40px auto;
             padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .cta {
             background: #28a745;
@@ -30,6 +34,34 @@
             margin-top: 20px;
             border-radius: 5px;
         }
+        .image-container {
+            width: 100%;
+            max-height: 300px;
+            overflow: hidden;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+        form {
+            margin-top: 20px;
+            text-align: left;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #007BFF;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -37,6 +69,9 @@
         <h1>Optimiza tu Estrategia con RFM</h1>
         <p>Segmentación avanzada para mejorar la retención y fidelización de clientes</p>
     </header>
+    <div class="image-container">
+        <img src="https://source.unsplash.com/800x300/?business,analytics" alt="Consultoría RFM">
+    </div>
     <div class="container">
         <h2>¿Por qué elegir nuestra consultoría?</h2>
         <p>Utilizamos modelos RFM (Recency, Frequency, Monetary) para identificar los segmentos más valiosos de tu base de clientes.</p>
@@ -46,6 +81,22 @@
             <li>Optimiza la inversión en marketing</li>
         </ul>
         <a href="#contacto" class="cta">Agenda una consulta gratuita</a>
+    </div>
+    <div class="container" id="contacto">
+        <h2>Contáctanos</h2>
+        <p>Déjanos tus datos y nos pondremos en contacto contigo.</p>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
     </div>
     <footer>
         <p>© 2025 Consultora RFM. Todos los derechos reservados.</p>
